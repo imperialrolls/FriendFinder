@@ -11,33 +11,45 @@
   <script src="https://code.jquery.com/jquery.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 
+  <!-- CSS link -->
+  <link rel="stylesheet" type="text/css" href="/assets/css/styles.css">
+
   <!-- Font Awesome Glyphicons -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Lobster|Open+Sans:600" rel="stylesheet">
 
 </head>
 
 <body>
 
-  <div class="container">
+  <<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#"><h1>FRIEND+FINDER</h1></a>
+    </nav>
 
-    <div class="jumbotron">
-      <h1><!-- <i class="fa fa-facebook-square" aria-hidden="true"></i> --> Friend Finder</h1>
-      <hr>
-      <h2>Answer the fucking questions. </h2>
-      <<!-- h2>Then find the friend with the greatest compatibility!</h2> -->
-      <br>
 
-      <div>
-        <a href="/survey"><button type="button" class="btn btn-lg btn-primary"><h4><span class="glyphicon glyphicon-list-alt"></span> Go to Survey</h4></button></a>
-      </div>
 
-    </div>
+  			<div class="row center">
+  				<div class="col-12 text-center">
+  				</div>
+  				<div class="col-12 text-center">
+  					<h2>We All Get By With A Little Help From A Friend</h2>
+  				</div>
+  				<div class="col-12 text-center">
+  					<a href="/survey">
+  						<button type="button" class="btn" id="btn-survey">Find your match</button>
+  					</a>
+  				</div>
+  			</div>
+  			<footer class="fixed-bottom">
+  				<div class="col-12 text-center">
+  					<a href="/api/users">API List</a> &nbsp;<span id="pipe">|</span>&nbsp; <a href="https://github.com/cuneytakcay/Couple-Maker" target="_blank">GitHub Repo</a>
+  				</div>
+  			</footer>
+  		</div>
 
-    <footer class="footer">
-      <div class="container">
-        <!-- <p><a href="/api/friends">API Friends List</a> | <a href="https://github.com/afhaque/friendfinder">GitHub Repo</a></p> -->
-      </div>
-    </footer>
 
   </div>
 

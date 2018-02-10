@@ -10,6 +10,7 @@ module.exports = function(app) {
 
 // POST ROUTE // PROCESS NEW DATA // RESPOND WITH BEST MATCH.
     app.post('/api/friend', function(req, res) {
+        console.log(req.body)
         // Our user is the data sent in the request.
         var newfriendData = req.body;
         var differences = [];
@@ -21,9 +22,9 @@ module.exports = function(app) {
                 var totalDifference = 0;
 
                 // For each answer, compare the answers and add the absolute value of the difference to the total difference.
-                for (var i = 0; i < newfriendData.answers.length; i++) {
-                    var otherAnswer = user.answers[i];
-                    var thisAnswer = newfriendData.answers[i];
+                for (var i = 0; i < newfriendData['scores[]'].length; i++) {
+                    var otherAnswer = user['scores[]'][i];
+                    var thisAnswer = newfriendData['scores[]'][i];
                     var difference = +otherAnswer - +thisAnswer;
                     totalDifference += Math.abs(difference);
                 }
@@ -45,7 +46,7 @@ module.exports = function(app) {
             }
 
             // Then send bestMatches to the client.
-            res.json(bestMatches);
+            res.json(bestMatches[0]);
         // If there is only one friend to compare to, skip all that work and just send back that friend.
         } else {
             res.json(friendData);

@@ -4,7 +4,7 @@
 
 var express = require("express");
 var bodyParser = require("body-parser");
-
+var path = require("path");
 
 // EXPRESS SERVER CONFIGURATION
 
@@ -18,6 +18,9 @@ var PORT = process.env.PORT || 3000;
 // Sets up the Express app to handle data parsing
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use(express.static('app/public'));
+
+
 
 // ROUTER
 // The below points our server to a series of "route" files.

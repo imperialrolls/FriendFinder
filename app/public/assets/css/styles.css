@@ -1,0 +1,33 @@
+html, body {
+  background-image: url(../images/friendsbg.jpeg);
+  background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-position: center;
+	background-color: #e3f2fd;
+}
+
+html, body {
+  font-family: 'Lobster', cursive;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.navbar-brand h1 {
+  color: white;
+  font-stretch: extra-expanded;
+}
+
+
+
+h2 {
+  color: white;
+}
+
+h3 {
+  color: white;
+}
+
+h4 {
+  color: white;
+}
